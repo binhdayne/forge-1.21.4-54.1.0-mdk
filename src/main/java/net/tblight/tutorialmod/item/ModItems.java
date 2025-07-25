@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.tblight.tutorialmod.item.custom.ChiselItem;
+import net.tblight.tutorialmod.item.custom.FuelItem;
 import net.tblight.tutorialmod.item.custom.KohlrabiItem;
 
 public class ModItems {
@@ -24,6 +25,8 @@ public class ModItems {
     public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
             () -> new KohlrabiItem(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
 
+    public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
+            () -> new FuelItem(new Item.Properties(),1200));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

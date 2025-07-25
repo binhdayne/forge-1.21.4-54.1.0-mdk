@@ -17,5 +17,9 @@
 
   "item.tutorialmod.kohlrabi": "Kohlrabi",
   "tooltip.tutorialmod.kohlrabi.shift_down": "They can't see you",
-  "tooltip.tutorialmod.kohlrabi": "Press §eShift§r for more Information!"
+  "tooltip.tutorialmod.kohlrabi": "Press §eShift§r for more Information!",
+
+  "item.tutorialmod.aurora_ashes": "Aurora Ashes",
+  "tooltip.tutorialmod.aurora_ashes.shift_down": "A strange fuel source...",
+  "tooltip.tutorialmod.aurora_ashes": "Press §eShift§r for more Information!"
 }
