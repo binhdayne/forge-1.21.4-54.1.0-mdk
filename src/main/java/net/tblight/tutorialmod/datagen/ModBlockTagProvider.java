@@ -35,7 +35,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get());
+                .add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get())
+                .add(ModBlocks.ALEXANDRITE_SLAB.get())
+                .add(ModBlocks.ALEXANDRITE_FENCE.get())
+                .add(ModBlocks.ALEXANDRITE_WALL.get())
+                .add(ModBlocks.ALEXANDRITE_DOOR.get())
+                .add(ModBlocks.ALEXANDRITE_BUTTON.get())
+                .add(ModBlocks.ALEXANDRITE_PRESSURE_PLATE.get())
+                .add(ModBlocks.ALEXANDRITE_STAIRS.get())
+                .add(ModBlocks.ALEXANDRITE_FENCE_GATE.get())
+                .add(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
