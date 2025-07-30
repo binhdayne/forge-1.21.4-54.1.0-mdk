@@ -25,6 +25,9 @@ public class ModItems {
     public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
             () -> new KohlrabiItem(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
 
+    public static final RegistryObject<Item> BEAST_GRASS = ITEMS.register("beast_grass",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BEAST_GRASS)));
+
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
             () -> new FuelItem(new Item.Properties(),1200));
     public static void register(IEventBus eventBus) {
