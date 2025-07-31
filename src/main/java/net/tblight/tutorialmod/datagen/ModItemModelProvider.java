@@ -25,6 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.KOHLRABI.get());
         basicItem(ModItems.BEAST_GRASS.get());
+        basicItem(ModItems.FIRE_HERB.get());
         basicItem(ModItems.AURORA_ASHES.get());
         buttonItem(ModBlocks.ALEXANDRITE_BUTTON, ModBlocks.ALEXANDRITE_BLOCK);
         fenceItem(ModBlocks.ALEXANDRITE_FENCE, ModBlocks.ALEXANDRITE_BLOCK);
