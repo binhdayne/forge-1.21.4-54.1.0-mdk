@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BEAST_GRASS.get());
                         output.accept(ModItems.FIRE_HERB.get());
                         output.accept(ModItems.AURORA_ASHES.get());
+                        output.accept(ModItems.FIRE_BOTTLE.get());
 
                     }).build());
 
@@ -52,6 +53,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
 
                         output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
+
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

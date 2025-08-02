@@ -6,10 +6,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.tblight.tutorialmod.item.custom.ChiselItem;
-import net.tblight.tutorialmod.item.custom.Fire_Herb;
-import net.tblight.tutorialmod.item.custom.FuelItem;
-import net.tblight.tutorialmod.item.custom.KohlrabiItem;
+import net.tblight.tutorialmod.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -31,6 +28,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> FIRE_HERB = ITEMS.register("fire_herb",
             () -> new Fire_Herb(new Item.Properties().food(ModFoodProperties.FIRE_HERB)));
+
+    public static final RegistryObject<Item> FIRE_BOTTLE = ITEMS.register("fire_bottle",
+            () -> new Fire_Bottle(new Item.Properties().food(ModFoodProperties.FIRE_BOTTLE).stacksTo(1)));
 
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
             () -> new FuelItem(new Item.Properties(),1200));

@@ -13,7 +13,7 @@ public class Fire_Herb extends Item {
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         if (!level.isClientSide()) {
-            entity.setRemainingFireTicks(100); // Cháy trong 5 giây
+            entity.setRemainingFireTicks(100);
         }
 
         return super.finishUsingItem(stack, level, entity);

@@ -17,4 +17,8 @@ public class ModFoodProperties {
             .effect(new MobEffectInstance(MobEffects.HEAL, 1, 0), 1f).alwaysEdible().build();
 
     public static final FoodProperties FIRE_HERB = new FoodProperties.Builder().nutrition(1).saturationModifier(0.25f).alwaysEdible().build();
+
+    public static final FoodProperties FIRE_BOTTLE = new FoodProperties.Builder().nutrition(0).saturationModifier(0).alwaysEdible().build();
+
+
 }

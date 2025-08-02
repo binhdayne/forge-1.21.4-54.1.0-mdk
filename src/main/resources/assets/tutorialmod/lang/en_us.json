@@ -23,6 +23,8 @@
 
   "item.tutorialmod.fire_herb": "Fire Herb",
 
+  "item.tutorialmod.fire_bottle": "Fire Bottle",
+
   "item.tutorialmod.aurora_ashes": "Aurora Ashes",
   "tooltip.tutorialmod.aurora_ashes.shift_down": "A strange fuel source...",
   "tooltip.tutorialmod.aurora_ashes": "Press §eShift§r for more Information!",
