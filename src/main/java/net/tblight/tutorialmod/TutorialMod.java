@@ -2,6 +2,7 @@ package net.tblight.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.tblight.tutorialmod.block.ModBlocks;
+import net.tblight.tutorialmod.entity.ModEntities;
 import net.tblight.tutorialmod.item.ModCreativeModeTabs;
 import net.tblight.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,6 +37,7 @@ public class TutorialMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModEntities.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
