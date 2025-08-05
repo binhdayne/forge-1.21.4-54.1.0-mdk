@@ -1,11 +1,13 @@
 package net.tblight.tutorialmod.item;
 
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.tblight.tutorialmod.TutorialMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.tblight.tutorialmod.entity.ModEntities;
 import net.tblight.tutorialmod.item.custom.*;
 
 public class ModItems {
@@ -34,6 +36,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
             () -> new FuelItem(new Item.Properties(),1200));
+
+    public static final RegistryObject<Item> TRICERATOPS_SPAWN_EGG = ITEMS.register("triceratops_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.TRICERATOPS, 0x53524b, 0xdac741, new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

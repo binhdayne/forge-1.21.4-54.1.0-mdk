@@ -1,8 +1,10 @@
 package net.tblight.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.tblight.tutorialmod.block.ModBlocks;
 import net.tblight.tutorialmod.entity.ModEntities;
+import net.tblight.tutorialmod.entity.client.TriceratopsRenderer;
 import net.tblight.tutorialmod.item.ModCreativeModeTabs;
 import net.tblight.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -64,6 +66,7 @@ public class TutorialMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+            EntityRenderers.register(ModEntities.TRICERATOPS.get(), TriceratopsRenderer::new);
         }
     }
 }
