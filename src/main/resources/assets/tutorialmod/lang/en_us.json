@@ -48,5 +48,6 @@
   "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor",
 
   "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
-  "entity.tutorialmod.triceratops": "Triceratops"
+  "entity.tutorialmod.triceratops": "Triceratops",
+  "entity.tutorialmod.ruinsgolem": "Ruins Golem"
 }

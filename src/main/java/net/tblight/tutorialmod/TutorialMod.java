@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.tblight.tutorialmod.block.ModBlocks;
 import net.tblight.tutorialmod.entity.ModEntities;
+import net.tblight.tutorialmod.entity.client.RuinsGolemRenderer;
 import net.tblight.tutorialmod.entity.client.TriceratopsRenderer;
 import net.tblight.tutorialmod.item.ModCreativeModeTabs;
 import net.tblight.tutorialmod.item.ModItems;
@@ -65,7 +66,7 @@ public class TutorialMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.RUINSGOLEM.get(), RuinsGolemRenderer::new);
             EntityRenderers.register(ModEntities.TRICERATOPS.get(), TriceratopsRenderer::new);
         }
     }
