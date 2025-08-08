@@ -7,6 +7,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
+import net.tblight.tutorialmod.entity.custom.TriceratopsEntity;
 
 public class RuinsGolemRenderer extends MobRenderer<RuinsGolemEntity, RuinsGolemModel<RuinsGolemEntity>> {
 
@@ -20,14 +21,14 @@ public class RuinsGolemRenderer extends MobRenderer<RuinsGolemEntity, RuinsGolem
     }
 
     @Override
-    public void render(RuinsGolemEntity entity, float entityYaw, float partialTicks, PoseStack poseStack,
-                       MultiBufferSource bufferSource, int packedLight) {
-        if (entity.isBaby()) {
-            poseStack.scale(0.5f, 0.5f, 0.5f); // nhỏ đi nếu là baby
+    public void render(RuinsGolemEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pPoseStack,
+                       MultiBufferSource pBuffer, int pPackedLight) {
+        if(pEntity.isBaby()) {
+            pPoseStack.scale(0.5f, 0.5f, 0.5f);
         } else {
-            poseStack.scale(1.0f, 1.0f, 1.0f); // không thay đổi
+            pPoseStack.scale(1f, 1f, 1f);
         }
 
-        super.render(entity, entityYaw, partialTicks, poseStack, bufferSource, packedLight);
+        super.render(pEntity, pEntityYaw, pPartialTicks, pPoseStack, pBuffer, pPackedLight);
     }
 }
