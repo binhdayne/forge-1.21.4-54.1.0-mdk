@@ -1,6 +1,7 @@
 package net.tblight.tutorialmod.entity;
 
 import net.tblight.tutorialmod.TutorialMod;
+import net.tblight.tutorialmod.entity.custom.GreatHungerEntity;
 import net.tblight.tutorialmod.entity.custom.RuinsGolemEntity;
 import net.tblight.tutorialmod.entity.custom.TriceratopsEntity;
 import net.minecraft.world.entity.EntityType;
@@ -22,6 +23,11 @@ public class ModEntities {
             ENTITY_TYPES.register("ruinsgolem", () -> EntityType.Builder.of(RuinsGolemEntity::new, MobCategory.CREATURE)
                     .sized(1.4f, 2.8f) // sửa theo kích thước model nếu cần
                     .build("ruinsgolem"));
+
+    public static final RegistryObject<EntityType<GreatHungerEntity>> GREATHUNGER =
+            ENTITY_TYPES.register("greathunger", () -> EntityType.Builder.of(GreatHungerEntity::new, MobCategory.CREATURE)
+                    .sized(1.4f, 2.8f) // sửa theo kích thước model nếu cần
+                    .build("greathunger"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

@@ -2,8 +2,10 @@ package net.tblight.tutorialmod.event;
 
 import net.tblight.tutorialmod.TutorialMod;
 import net.tblight.tutorialmod.entity.ModEntities;
+import net.tblight.tutorialmod.entity.client.GreatHungerModel;
 import net.tblight.tutorialmod.entity.client.RuinsGolemModel;
 import net.tblight.tutorialmod.entity.client.TriceratopsModel;
+import net.tblight.tutorialmod.entity.custom.GreatHungerEntity;
 import net.tblight.tutorialmod.entity.custom.TriceratopsEntity;
 import net.tblight.tutorialmod.entity.custom.RuinsGolemEntity;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -18,11 +20,13 @@ public class ModEventBusEvents {
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(TriceratopsModel.LAYER_LOCATION, TriceratopsModel::createBodyLayer);
         event.registerLayerDefinition(RuinsGolemModel.LAYER_LOCATION, RuinsGolemModel::createBodyLayer);
+        event.registerLayerDefinition(GreatHungerModel.LAYER_LOCATION, GreatHungerModel::createBodyLayer);
     }
 
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.TRICERATOPS.get(), TriceratopsEntity.createAttributes().build());
         event.put(ModEntities.RUINSGOLEM.get(), RuinsGolemEntity.createAttributes().build());
+        event.put(ModEntities.GREATHUNGER.get(), GreatHungerEntity.createAttributes().build());
     }
 }

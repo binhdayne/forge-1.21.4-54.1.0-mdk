@@ -49,5 +49,6 @@
 
   "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
   "entity.tutorialmod.triceratops": "Triceratops",
-  "entity.tutorialmod.ruinsgolem": "Ruins Golem"
+  "entity.tutorialmod.ruinsgolem": "Ruins Golem",
+  "entity.tutorialmod.greathunger": "Great Hunger"
 }
