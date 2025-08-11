@@ -26,7 +26,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<GreatHungerEntity>> GREATHUNGER =
             ENTITY_TYPES.register("greathunger", () -> EntityType.Builder.of(GreatHungerEntity::new, MobCategory.CREATURE)
-                    .sized(1.4f, 2.8f) // sửa theo kích thước model nếu cần
+                    .sized(0,0) // sửa theo kích thước model nếu cần
                     .build("greathunger"));
 
     public static void register(IEventBus eventBus) {
