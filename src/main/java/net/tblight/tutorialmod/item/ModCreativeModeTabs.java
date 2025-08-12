@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FIRE_HERB.get());
                         output.accept(ModItems.AURORA_ASHES.get());
                         output.accept(ModItems.FIRE_BOTTLE.get());
+                        output.accept(ModItems.TRICERATOPS_SPAWN_EGG.get());
 
                     }).build());
 
