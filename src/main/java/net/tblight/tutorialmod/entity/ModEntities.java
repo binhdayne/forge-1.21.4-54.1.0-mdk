@@ -21,7 +21,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<RuinsGolemEntity>> RUINSGOLEM =
             ENTITY_TYPES.register("ruinsgolem", () -> EntityType.Builder.of(RuinsGolemEntity::new, MobCategory.CREATURE)
-                    .sized(1.4f, 2.8f) // sửa theo kích thước model nếu cần
+                    .sized(0.5f, 0.5f) // sửa theo kích thước model nếu cần
                     .build("ruinsgolem"));
 
     public static final RegistryObject<EntityType<GreatHungerEntity>> GREATHUNGER =

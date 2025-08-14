@@ -27,7 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AURORA_ASHES.get());
                         output.accept(ModItems.FIRE_BOTTLE.get());
                         output.accept(ModItems.TRICERATOPS_SPAWN_EGG.get());
-
+                        output.accept(ModItems.GREATHUNGER_SPAWN_EGG.get());
+                        output.accept(ModItems.RUINSGOLEM_SPAWN_EGG.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ALEXANDRITE_BLOCKS_TAB = CREATIVE_MODE_TAB.register("alexandrite_blocks_tab",

@@ -43,6 +43,10 @@ public class ModItems {
     public static final RegistryObject<Item> GREATHUNGER_SPAWN_EGG = ITEMS.register("greathunger_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.GREATHUNGER, 0xdddddd, 0x66ff00, new Item.Properties()));
 
+    public static final RegistryObject<Item> RUINSGOLEM_SPAWN_EGG = ITEMS.register("ruinsgolem_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RUINSGOLEM, 0x53524b, 0xffd700, new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
